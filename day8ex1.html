@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>events</title>
+   </head>
+   <body>
+   <h1>BEEP SITE</h1>
+      <div id ="lulu" >
+      <button id= "myButton"> CLICK ME </button>
+      </div>
+      <script src="jquery-2.1.1.js"></script>
+      <script type="text/javascript">
+         var fn = function(){
+            console.log('heey')
+         }
+         fn()
+         document.querySelector('#lulu').addEventListener('click' , fn)
+         document.querySelector('#lulu').addEventListener('click', function() {
+           console.log('same deal')
+         })
+         function beeper(){
+         $('#lulu').append('<p>BEEP </p>')  
+         var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+         
+         $('body').css('background-color', randomColor);
+         }
+         $('#myButton').on('click' , beeper);
+         
+      </script>
+   </body>
+</html>

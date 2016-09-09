@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="random">
+        
+    </div>
+    <script src="jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+        var items =['item1', 'item2', 'item3'];
+        
+        var i = 0;
+        while(i<10){
+            var randomItem = Math.floor(Math.random()*items.length);
+            document.querySelector('#random').textContent += items[randomItem]+(i==9?'.':' ');
+            i++;
+        }
+        var probality = Math.pow((1/3),10);
+            $('#random').append('  The probality of getting same item 10 times is '+ probality);
+    </script>
+</body>
+</html>

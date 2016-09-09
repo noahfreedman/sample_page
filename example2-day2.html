@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example 2</title>
+        <style>
+            .class1 {
+                color: red;
+            }
+            .class2 {
+                background-color: blue;
+                font-weight: bold;
+            }
+            .class1.class2 {
+                font-size: 37px;
+            }
+            .section1 .class1 {
+                border: solid 7px green;
+            }
+            #unique {
+                color: green;
+                background-color: white;
+                font-weight: initial;
+            }
+        </style>
+    </head>
+    <body>
+        <p>My first paragraph of text. Here we go.</p>
+        <p class="class1">My first paragraph of text. Here we go.</p>
+        <div class="section1">
+            <p class="class2">My first paragraph of text. Here we go.</p>
+            <p class="class1 class2">My first paragraph of text. Here we go.</p>
+        </div>
+        <p id="unique" class="class1 class2">My first paragraph of text. Here we go.</p>
+    </body>
+</html>

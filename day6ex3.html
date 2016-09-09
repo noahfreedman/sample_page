@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>while loop</title>
+    <style>
+      .odd {
+        background-color: grey;
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      hr {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+<div id="text"></div>
+<script type="text/javascript">
+var htmlContent = "";    
+var i=1,n=20;
+while(i<=(n-1)){
+    console.log( i+", ");
+    var styleClass;
+    // if (i % 2 == 1) {
+    //     styleClass="odd";
+    // } else {
+    //   styleClass="even";
+    // }
+    // htmlContent += "<p class='" + styleClass + "'>" + i+ "</p><hr>";
+    htmlContent += "<p class='" + ((i % 2 == 1) ? "odd":"even")  + "'>" + i+ "</p><hr>";
+    i+=1;
+}
+htmlContent += "<p>" + n + "</p>";
+document.querySelector('#text').innerHTML=htmlContent;
+console.log(htmlContent);
+</script>
+</body>
+</html>

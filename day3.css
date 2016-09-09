@@ -1,0 +1,15 @@
+.cities {
+    background-color: grey;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+p {
+	color: red;
+}
+#paris h2 {
+    color: green;
+}
+#paris p {
+	color: blue;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions example</title>
+</head>
+<body>
+<div id="output"></div>
+
+<script src="jquery-2.1.1.js"></script>
+<script type="text/javascript">
+
+function showDate() {
+	var date = new Date();
+    console.log("The date currently is " + date);
+}
+
+showDate();
+showDate();
+showDate();
+
+function enthusiasm() {
+	var text = "Wahooooo!<br>"
+	$('#output').append(text);
+}
+
+enthusiasm();
+
+</script>
+</body>
+</html>

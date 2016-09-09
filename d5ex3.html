@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>logical operators</title>
+   </head>
+   <body>
+      <div id="person"></div>
+      <div id="starter">welcome to the club</div>
+      <script type="text/javascript">
+         var name=window.prompt("enter your name")
+         var age=parseInt(window.prompt("enter age "))
+         var gender=window.prompt("enter gender")
+         var is_member=window.prompt("are you a member")
+         
+         
+         if(is_member=="no"|| age<21) {
+            if (gender=="male") {
+            document.querySelector('#starter').textContent="Dear sir we sorry you cannot acces this site"
+            } else {
+            document.querySelector('#starter').textContent="Dear maa'm we sorry you cannot acces this site"
+            }
+        } else {
+            if (gender=="male") {
+                document.querySelector('#person').textContent= "Mr. "+ name + ", WELCOME to our site";
+            } else {
+                document.querySelector('#person').textContent="Mrs. " + name + ", Dear Mrs WELCOME to our site"
+            }
+            var thirsty=window.prompt("are you thirsty");
+            if (thirsty=="yes") {
+                var drink_of_choice=window.prompt("whats your drink of choice")
+                if (drink_of_choice=="Coors Light") {
+                    alert ("Leave this club immediately!");
+                } else {
+                    alert("Yes " + name + ", one " + drink_of_choice + "coming up!");
+                }
+            }
+         }
+      </script>
+   </body>
+</html>

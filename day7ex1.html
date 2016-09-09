@@ -1,0 +1,45 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>HTML Document</title>
+</head>
+<body>
+<div id="everything">
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script >
+  $('h1').css('color','blue');
+  $('body').css('background-color','red');
+  $('#everything').css('font-size','20');
+  $('h1').css('color','blue');
+  $('.holder').css('border','1px solid black');
+  $('ul li').css('font-weight','bold');
+  $('h1+p').css('color','green');
+  $('#secret').css('display','none');
+  $('#secret').css('display','block');
+  $('#change-me').text('I have just changed this text');
+  $('#change-me').append('.This is an append of the text');
+  $('#change-me').html('<p>The text has been replaced with this paragraph of p tags</p><p>And this other one</p>'); //the replaceWith replaces also the tages and the id
+  $('#change-me').append('<p>This another paragraph appended</p>');
+  $('li').text('Web designer pro');
+  $('li').append('.Taking web designing to greater heights');
+  $('#everything').append('<ol><li>Am good<li</li><li>Am better</li><li>Am the best</li></ol>');
+  </script>
+</body></html>
